@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>glacialbytes.foundations.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyName>GlacialBytes.Foundation</AssemblyName>
+    <RootNamespace>GlacialBytes.Foundation</RootNamespace>
+
+    <Authors>Stanislav A. Kychanov</Authors>
+    <Company>Glacial Bytes</Company>
+    <Product>Glacial Bytes foundation class libraries.</Product>
+    <Copyright>2022 © Glacial Bytes.</Copyright>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.28" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
